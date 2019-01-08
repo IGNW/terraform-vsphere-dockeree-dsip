@@ -12,9 +12,10 @@ module "dockeree-cluster" {
   domain                  = "corpintra.net"
   manager_node_count      = "2"
   worker_node_count       = "1"
-  dtr_node_count          = "2"
+  dtr_node_count          = "1"
   vsphere_user            = "ticrall@apac"
   vsphere_password        = "${var.vsphere_password}"
   terraform_password      = "${var.terraform_password}"
   ucp_admin_password      = "${var.ucp_admin_password}"
+  ucp_version             = "3.0.3"
 }
