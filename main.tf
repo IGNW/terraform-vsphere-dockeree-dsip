@@ -15,7 +15,8 @@ module "dockeree-cluster" {
   dtr_node_count          = "1"
   vsphere_user            = "ticrall@apac"
   vsphere_password        = "${var.vsphere_password}"
-  terraform_password      = "${var.terraform_password}"
+  ssh_username            = "terraform"
+  ssh_password            = "${var.terraform_password}"
   ucp_admin_password      = "${var.ucp_admin_password}"
   ucp_version             = "3.0.3"
 }
