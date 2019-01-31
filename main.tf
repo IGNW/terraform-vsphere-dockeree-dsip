@@ -8,7 +8,7 @@ module "dockeree-cluster" {
   vsphere_compute_cluster = "Lab"
   vsphere_network         = "ICS-POC"
   vsphere_folder          = ""
-  vm_template             = "ubuntu16_dockeree_template"
+  vm_template             = "ubuntu1604_dockeree_template"
   domain                  = "corpintra.net"
   manager_node_count      = "2"
   worker_node_count       = "1"
