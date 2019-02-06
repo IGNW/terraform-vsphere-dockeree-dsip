@@ -18,5 +18,5 @@ module "dockeree-cluster" {
   ssh_username            = "terraform"
   ssh_password            = "${var.ssh_password}"
   ucp_admin_password      = "${var.ucp_admin_password}"
-  ucp_version             = "3.0.3"
+  ucp_version             = "3.1.3"
 }
